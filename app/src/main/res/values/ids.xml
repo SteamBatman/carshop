@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="photo" type="id" />
+    <item name="nameView" type="id" />
+    <item name="countView" type="id" />
+    <item name="removeButton" type="id" />
+    <item name="countView2" type="id" />
+    <item name="descriptionView" type="id" />
+    <item name="addButton" type="id" />
+    <item name="Button" type="id" />
+</resources>

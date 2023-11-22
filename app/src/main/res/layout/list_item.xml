@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="287dp"
+        android:layout_height="145dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="235dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="76dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/countView"
+        app:layout_constraintTop_toBottomOf="@+id/removeButton"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/countView"
+        android:layout_width="44dp"
+        android:layout_height="23dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photo"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/countView2"
+        android:layout_width="44dp"
+        android:layout_height="23dp"
+        android:textSize="18sp"
+        android:text = "шт"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photo"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/descriptionView"
+        android:layout_width="282dp"
+        android:layout_height="255dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/removeButton"
+        android:layout_width="77dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#FFC107"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countView" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="77dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#FFC107"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/removeButton"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countView" />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="128dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FFC107"
+        android:onClick="add"
+        android:text="Добавить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionView" />
+    <Button
+        android:id="@+id/removeButtonButton"
+        android:layout_width="128dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FFC107"
+        android:onClick="remove"
+        android:text="Очистить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
